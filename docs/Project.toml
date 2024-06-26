@@ -1,0 +1,3 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Rigol = "40b6147a-3baf-498e-a713-310b86a2f17c"
