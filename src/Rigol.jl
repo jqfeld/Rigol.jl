@@ -25,11 +25,12 @@ function open(addr)
   rm.open_resource(addr)
 end
 
-function _data_to_values(data, params)
+function _data_to_values(data, params;)
   format, typo, num_points, count, x_incr, x_orig, x_ref, y_incr, y_orig, y_ref = params
   a = 1:num_points
-  xs = @. ((a - x_ref) * x_incr) + x_orig
-  ys = @. ((data - y_ref) * y_incr) + y_orig
+  xs = @. ((a - x_ref- x_orig) * x_incr) 
+  # ys = @. ((data) * y_incr) #+ y_orig
+  ys = @. ((data - y_ref- y_orig) * y_incr) 
   return [xs, ys]
 end
 
