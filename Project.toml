@@ -3,11 +3,7 @@ uuid = "40b6147a-3baf-498e-a713-310b86a2f17c"
 authors = ["Jan Kuhfeld <jan.kuhfeld@rub.de> and contributors"]
 version = "1.0.0-DEV"
 
-[deps]
-PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
-
 [compat]
-PyCall = "1.96.4"
 julia = "1.6.7"
 
 [extras]
