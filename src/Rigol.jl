@@ -1,6 +1,5 @@
 module Rigol
 
-import PyCall: pyimport
 
 export get_ch_data, single
 
